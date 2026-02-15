@@ -1,66 +1,97 @@
-'use client';
-import Image from 'next/image';
-import Slider from './slider';
+"use client";
+import Image from "next/image";
+import Slider from "./slider";
 
 export default function Hero() {
     return (
         <>
-            <div className="relative w-full h-[800px] flex flex-col bg-[url('/images/bg.png')] bg-cover bg-center">
+            <div className="relative w-full min-h-[93dvh] flex flex-col items-center justify-start overflow-hidden">
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/images/bg.png"
+                        alt="Background Texture"
+                        fill
+                        className="object-cover object-center opacity-40 sm:opacity-100"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-transparent sm:from-white/30" />
+                </div>
 
-                <div className="relative z-20 flex-shrink-0 flex flex-col items-center justify-start pt-[2vh] sm:pt-[3vh] lg:pt-[4vh] px-4 w-full">
-                    <div className="relative w-[50vw] sm:w-[40vw] md:w-[30vw] lg:w-[25vw] xl:w-[20vw] mb-[1vh]">
+                <div className="relative z-20 flex flex-col items-center w-full px-4 pt-[10vh] sm:pt-[4vh]">
+                    <div className="relative w-[60vw] sm:w-[40vw] lg:w-[25vw] mb-4 animate-fade-in-down">
                         <Image
                             src="/images/smarak.png"
                             alt="Smarak Logo"
                             width={500}
-                            height={200}
+                            height={500}
                             className="w-full h-auto drop-shadow-2xl"
                             priority
                         />
                     </div>
 
-                    <p className="text-xs sm:text-sm md:text-base lg:text-xl text-center text-[#733f35] mb-[1vh] px-4 font-serif font-medium tracking-wide max-w-2xl">
-                        "Fusing Innovation With a Greener Tomorrow"
+                    <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-center text-[#980204] mb-4 font-serif font-semibold tracking-wider max-w-3xl drop-shadow-sm">
+                        &ldquo;Shaping Architecture Through Engineering
+                        Thought&rdquo;
                     </p>
 
-
-                    <div className="flex flex-row items-center justify-center gap-1 sm:gap-2 md:gap-4 w-full max-w-5xl px-2">
-
-                        <div className="hidden sm:block w-16 sm:w-24 md:w-32 lg:w-40 opacity-90 flex-shrink-0">
+                    <div className="flex flex-row items-center justify-center gap-4 sm:gap-6 w-full max-w-4xl">
+                        <div className="hidden sm:block w-20 md:w-32 lg:w-40 opacity-90 transition-transform hover:-translate-x-1 duration-300">
                             <Image
                                 src="/images/arrow-left.png"
                                 alt="Decorative arrow left"
                                 width={300}
-                                height={30}
+                                height={300}
                                 className="w-full h-auto object-contain"
                             />
                         </div>
 
-                        <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl text-center text-[#733f35] font-saman whitespace-nowrap px-2">
-                            11 - 13 April 2026
-                        </p>
+                        <div className="relative">
+                            <p className="text-xl sm:text-2xl text-center text-[#980204] font-serif font-bold whitespace-nowrap drop-shadow-md">
+                                13 - 15 March 2026
+                            </p>
+                            <div className="absolute top-full left-0 right-0 h-8 bg-gradient-to-b from-[#f6eee3] to-transparent" />
+                        </div>
 
-                        <div className="hidden sm:block w-16 sm:w-24 md:w-32 lg:w-40 opacity-90 flex-shrink-0">
+                        <div className="hidden sm:block w-20 md:w-32 lg:w-40 opacity-90 transition-transform hover:translate-x-1 duration-300">
                             <Image
                                 src="/images/arrow-right.png"
                                 alt="Decorative arrow right"
                                 width={300}
-                                height={30}
+                                height={300}
                                 className="w-full h-auto object-contain"
                             />
                         </div>
                     </div>
                 </div>
 
+                {/* 3. Monument Image - FIX APPLIED HERE */}
+                {/* - We set a fixed height for the container (e.g., 60% of viewport) so it doesn't jump around.
+            - object-cover: Ensures the image fills the width fully (no side gaps).
+            - object-bottom: Anchors the image to the floor so the base is never cut off.
+        */}
+                <div className="absolute bottom-0 z-10 w-full h-[50vh] md:h-[65vh] pointer-events-none llg:hidden">
+                    <Image
+                        src="/images/monu.png"
+                        alt="Monument"
+                        fill
+                        className="object-cover object-bottom"
+                        priority
+                    />
+                </div>
+
                 <Image
-                    src="/images/monu.png"
+                    src="/alter.png"
                     alt="Monument"
-                    width={1200}
-                    height={200}
-                    className="absolute bottom-0 w-full h-[600px] object-fill object-center"
+                    width={500}
+                    height={500}
+                    className="absolute bottom-0 w-auto h-auto object-fill object-center"
                 />
+
+                {/* 4. Slider */}
+                <div className="absolute bottom-0 w-full z-30">
+                    <Slider />
+                </div>
             </div>
-            <Slider />
         </>
     );
 }

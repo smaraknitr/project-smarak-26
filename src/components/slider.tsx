@@ -1,5 +1,5 @@
-"use client" ; 
-import React from 'react'
+"use client";
+import React from "react";
 
 const slider = () => {
     return (
@@ -12,8 +12,10 @@ const slider = () => {
                                 key={`first-${i}`}
                                 className="text-[#4a2c20] text-base sm:text-lg md:text-xl lg:text-3xl font-saman tracking-wider mx-4 sm:mx-8 md:mx-12"
                             >
-                                fusing innovation with a greener tomorrow
-                                <span className="mx-4 sm:mx-8 md:mx-12 font-bold">||</span>
+                                Shaping Architecture Through Engineering Thought
+                                <span className="mx-4 sm:mx-8 md:mx-12 font-bold">
+                                    ||
+                                </span>
                             </span>
                         ))}
                     </div>
@@ -25,27 +27,29 @@ const slider = () => {
                                 className="text-[#4a2c20] text-base sm:text-lg md:text-xl lg:text-3xl font-saman tracking-wider mx-4 sm:mx-8 md:mx-12"
                             >
                                 fusing innovation with a greener tomorrow
-                                <span className="mx-4 sm:mx-8 md:mx-12 font-bold">||</span>
+                                <span className="mx-4 sm:mx-8 md:mx-12 font-bold">
+                                    ||
+                                </span>
                             </span>
                         ))}
                     </div>
                 </div>
             </div>
             <style jsx>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-scroll {
-          animation: scroll 6s linear infinite;
-        }
-      `}</style>
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-50%);
+                    }
+                }
+                .animate-scroll {
+                    animation: scroll 6s linear infinite;
+                }
+            `}</style>
         </>
-    )
-}
+    );
+};
 
-export default slider
+export default slider;
