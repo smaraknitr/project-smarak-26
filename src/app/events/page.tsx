@@ -74,7 +74,6 @@ export default function EventsPage() {
 
     return (
         <div className="min-h-screen bg-[#F5EFE6]">
-            <Navbar />
 
             {/* Hero Section */}
             <section className="relative py-16 px-4">
@@ -228,96 +227,7 @@ export default function EventsPage() {
                 </div>
             </section>
 
-            {/* Footer */}
-            <footer className="bg-[#505050] text-white py-12 px-4 mt-16">
-                <div className="max-w-7xl mx-auto">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-8">
-                        {/* Address Section */}
-                        <div>
-                            <h3
-                                className="text-2xl font-bold mb-4 text-[#F5A86E]"
-                                style={{ fontFamily: "Saman, serif" }}
-                            >
-                                address
-                            </h3>
-                            <p className="text-sm text-white leading-relaxed">
-                                National Institute of Technology Rourkela
-                                <br />
-                                Odisha, India, 769008
-                            </p>
-                        </div>
-
-                        {/* NIT Logo Center */}
-                        <div className="flex justify-center items-start">
-                            <div className="rounded-full p-6 w-32 h-32 flex items-center justify-center">
-                                <img
-                                    src="/nit-logo.png"
-                                    alt="NIT Rourkela"
-                                    className="w-full h-full"
-                                />
-                            </div>
-                        </div>
-
-                        {/* Contact Section */}
-                        <div className="text-left md:text-right">
-                            <h3
-                                className="text-2xl font-bold mb-4 text-[#F5A86E]"
-                                style={{ fontFamily: "Saman, serif" }}
-                            >
-                                contact us
-                            </h3>
-                            <div className="text-sm text-white leading-relaxed">
-                                <a
-                                    href="https://whatsapp.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="underline hover:text-[#F5A86E] transition-colors"
-                                >
-                                    Join our WhatsApp Channel
-                                </a>
-                                <br />
-                                <a
-                                    href="mailto:smaraknitrourkela@gmail.com"
-                                    className="hover:text-[#F5A86E] transition-colors"
-                                >
-                                    smaraknitrourkela@gmail.com
-                                </a>
-                                <br />
-                                <span>9905526212</span>
-                                <br />
-                                <span>9078840607</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Copyright */}
-                    <div className="text-center pt-6 border-t border-gray-600">
-                        <p className="text-sm text-white mb-6">
-                            © Copyright 2026 CEST Club, NITR. All Rights
-                            Reserved.
-                        </p>
-                        <p className="text-sm text-white">
-                            Made with <span className="text-red-500">❤</span> by
-                            Webwiz
-                        </p>
-                    </div>
-                </div>
-            </footer>
-
-            <style jsx>{`
-                @keyframes scroll {
-                    0% {
-                        transform: translateX(0);
-                    }
-                    100% {
-                        transform: translateX(-50%);
-                    }
-                }
-                .animate-scroll {
-                    display: inline-block;
-                    animation: scroll 20s linear infinite;
-                }
-            `}</style>
+           
         </div>
     );
 }
