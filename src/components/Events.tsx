@@ -112,7 +112,7 @@ export default function Events() {
                         marginBottom: "clamp(0.75rem, 1.5vh, 1rem)",
                       }}
                     >
-                      {event.desc}
+                      {event.description}
                     </p>
 
                     <button
