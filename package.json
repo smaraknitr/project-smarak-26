@@ -14,10 +14,11 @@
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.34.0",
-    "next": "14.2.3",
+    "next": "14.2.35",
     "react": "^18",
     "react-dom": "^18",
-    "react-fast-marquee": "^1.6.5"
+    "react-fast-marquee": "^1.6.5",
+    "react-hot-toast": "^2.6.0"
   },
   "devDependencies": {
     "@types/node": "25.2.0",
