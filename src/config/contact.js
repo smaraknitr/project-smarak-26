@@ -12,7 +12,7 @@ export const footerCards = [
   },
   {
     id: 3,
-    title: "NIT Rourkela",
+    title: "NIT ROURKELA",
     image: "/images/nitr.jpg",
   },
 ];
