@@ -14,40 +14,31 @@ const poppins = Poppins({
 export default function EventsPage() {
     const events = [
         {
-            id: 1,
-            title: "स्पर्धा",
-            description:
-                "Join us a thrematic team -based competition where participants will design and construct a structure bridge using specified materials.",
-        },
-        {
-            id: 2,
-            title: "स्पर्धा",
-            description:
-                "Join us a thrematic team -based competition where participants will design and construct a structure bridge using specified materials.",
-        },
-        {
-            id: 3,
-            title: "स्पर्धा",
-            description:
-                "Join us a thrematic team -based competition where participants will design and construct a structure bridge using specified materials.",
-        },
-        {
-            id: 4,
-            title: "स्पर्धा",
-            description:
-                "Join us a thrematic team -based competition where participants will design and construct a structure bridge using specified materials.",
-        },
-        {
-            id: 5,
-            title: "स्पर्धा",
-            description:
-                "Join us a thrematic team -based competition where participants will design and construct a structure bridge using specified materials.",
-        },
-        {
-            id: 6,
-            title: "स्पर्धा",
-            description:
-                "Join us a thrematic team -based competition where participants will design and construct a structure bridge using specified materials.",
+  id: 1,
+  title: 'SAHAYATRI',
+  description: 'SAHAYATRI is a machine learning–based hackathon conducted under Smarak – The Civil Fest of NIT Rourkela. Participants will work with real-world accident data to build intelligent models and contribute toward creating safer and smarter road infrastructure by integrating civil engineering and data science. Participation is completely free for NIT Rourkela students, with a total cash prize pool of ₹25,000.',
+},
+
+    {
+      id: 2,
+      title: 'Gati Sheel',
+      description: 'Gati Sheel is an innovative, team-based competition where participants will design and construct a functional roller coaster track using engineering principles. Teams will be evaluated based on the duration the marble remains in motion on the track and the overall aesthetics and structural creativity of their model. This competition challenges participants to apply concepts of physics, structural stability, and design efficiency, fostering teamwork, problem-solving, and innovation.',
+    },
+    {
+      id: 3,
+      title: 'Setu',
+      description: 'Setu is a dynamic team-based competition where participants will design and construct a suspension bridge using specified materials. The structures will be evaluated based on maximum load-bearing capacity and aesthetic appeal. This event challenges teams to apply principles of structural engineering, material efficiency, and design innovation. The team achieving the highest overall score will be declared the winner, demonstrating excellence in both strength and creativity.',
+    },
+{
+  id: 4,
+  title: 'Pramanam',
+  description: 'Pramanam is an engaging team-based quiz competition that tests participants’ fundamental knowledge across diverse subjects, including general awareness, current affairs, science, and history. Teams will compete in multiple challenging rounds that assess analytical thinking, problem-solving skills, and teamwork. The event promotes intellectual curiosity, knowledge retention, and a spirit of healthy competition.',
+},
+
+    {
+      id: 5,
+      title: 'Shilp Setu',
+      description: 'Shilp Setu is a hands-on team-based competition where participants will design and construct a stable, load-bearing arch bridge using materials like sand, bricks, and water. This challenge tests structural engineering skills, creativity, and material efficiency. Bridges will be evaluated based on strength, load-bearing capacity, and overall design aesthetics. The competition encourages innovation in construction techniques while providing practical exposure to architectural and civil engineering principles.',
         },
     ];
 
@@ -64,6 +55,16 @@ export default function EventsPage() {
             description:
                 "This seminar offers students in-depth exposure to the Bureau of Indian Standards (BIS) and its significance in civil engineering. It covers essential industrial parameters, regulatory guidelines, and compliance requirements for construction materials and daily-use products. By understanding these standards, students will develop a strong foundation in safety, quality control, and industry best practices.",
         },
+         {
+      id: 3,
+      title: '3D Printing Workshop',
+      description: 'This interactive workshop explores the innovative applications of 3D printing in civil engineering. Students will learn about advanced construction techniques, material efficiency, and rapid prototyping using 3D printing technology. The session provides a comprehensive understanding of how digital fabrication is transforming the construction industry, from architectural modelling to large-scale infrastructure projects and it will be demonstrated by the NITR students only.',
+    },
+{
+  id: 4,
+  title: 'Professor Seminar',
+  description: 'This expert-led seminar offers students valuable insights into the latest advancements in civil engineering. Renowned professors will discuss emerging technologies, sustainable construction practices, smart infrastructure, and cutting-edge research shaping the future of the field. The session encourages intellectual engagement and broadens students’ perspectives on evolving industry trends.',
+},
     ];
 
     const categories = [
