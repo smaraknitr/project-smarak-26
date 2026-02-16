@@ -5,7 +5,7 @@ import Slider from "./slider";
 export default function Hero() {
     return (
         <>
-            <div className="relative w-full min-h-[93dvh] llg:min-h-[120dvh] flex flex-col items-center justify-start overflow-hidden bg-[url('/images/bg.png')] bg-center ">
+            <div className="relative w-full min-h-[93svh] llg:min-h-[120svh] flex flex-col items-center justify-start overflow-hidden bg-[url('/images/bg.png')] bg-center ">
                 <div className="absolute inset-0 z-0">
                     {/* <Image
                         src="/images/bg.png"

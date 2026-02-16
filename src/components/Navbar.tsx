@@ -95,7 +95,7 @@ export default function Navbar() {
 
                 {/* Mobile Menu */}
                 <div
-                    className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out pb-5 ${
+                    className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
                         isMenuOpen
                             ? "max-h-[500px] opacity-100"
                             : "max-h-0 opacity-0"
