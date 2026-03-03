@@ -3,6 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import Slider from "@/components/slider";
+import CoreTeam from "@/components/CoreTeam";
+import Coordinators from "@/components/Coordinators";
 
 function Page() {
 
@@ -48,7 +50,10 @@ function Page() {
           </div>
         </section>
       </div>
-      <Slider/>
+      <Slider />
+      <CoreTeam />
+      <Coordinators />
+      <Slider />
     </>
   );
 }
