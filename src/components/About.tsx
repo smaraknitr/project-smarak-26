@@ -43,12 +43,6 @@ const Aboutus = () => {
                                             className="w-full h-auto object-contain"
                                         />
                                     </div>
-
-                                    {/* <div className="absolute -bottom-2 -right-4 bg-gradient-to-br from-[#f9d65e] to-[#e8b84a] rounded-full px-6 py-3 shadow-lg border-3 border-[#d4a847]">
-                                    <p className="text-[#3b2a1e] font-saman text-base md:text-lg lg:text-xl font-semibold whitespace-nowrap">
-                                        Glorifying since 12 years
-                                    </p>
-                                </div> */}
                                 </div>
                             </div>
                         </div>
