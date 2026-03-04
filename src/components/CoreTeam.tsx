@@ -44,7 +44,7 @@ export default function CoreTeam() {
                             <div className="relative w-full aspect-[1.1] md:aspect-[1.15] bg-[#980204] flex items-end justify-center overflow-hidden pt-4">
                                 <div className="absolute inset-4 sm:inset-6 z-[1]">
                                     <Image
-                                        src="/images/vector.png"
+                                        src="/images/Vector.png"
                                         alt="vector Background"
                                         fill
                                         className="object-contain"
