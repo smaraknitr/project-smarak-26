@@ -39,7 +39,7 @@ export default function Hero() {
                         </div>
 
                         <p className="text-xl sm:text-2xl text-center text-[#980204] font-serif font-bold whitespace-nowrap drop-shadow-md">
-                            13 - 15 March 2026
+                            3 - 5 April 2026
                         </p>
 
                         <div className="hidden sm:block w-20 md:w-32 lg:w-40 opacity-90 transition-transform hover:translate-x-1 duration-300">

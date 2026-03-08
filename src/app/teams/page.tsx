@@ -5,6 +5,7 @@ import Image from "next/image";
 import Slider from "@/components/slider";
 import CoreTeam from "@/components/CoreTeam";
 import Coordinators from "@/components/Coordinators";
+import Patron from "@/components/Patron";
 
 function Page() {
 
@@ -51,6 +52,8 @@ function Page() {
         </section>
       </div>
       <Slider />
+      <Patron/>
+      <Slider/>
       <CoreTeam />
       <Coordinators />
       <Slider />
