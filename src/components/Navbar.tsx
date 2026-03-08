@@ -26,6 +26,17 @@ export default function Navbar() {
         handleRegister();
     }
 
+    function handleBrochureDownload() {
+        if (isMenuOpen) setIsMenuOpen(false);
+        const link = document.createElement('a');
+        link.href = '/brochure.pdf';
+        link.download = 'SMARAK_Brochure.pdf';
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
     return (
         <nav className="bg-[#980204] sticky top-0 z-50">
             <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -58,8 +69,14 @@ export default function Navbar() {
                             ))}
                         </div>
 
-                        {/* Desktop Register Button */}
-                        <div className={`hidden lg:block ${poppins.className}`}>
+                        {/* Desktop Buttons - Both styled same */}
+                        <div className={`hidden lg:flex items-center gap-3 ${poppins.className}`}>
+                            <button
+                                onClick={handleBrochureDownload}
+                                className="border-2 border-[#f5b461] text-[#f5b461] hover:bg-[#f5b461] hover:text-[#8B3333] px-5 xl:px-6 py-1.5 xl:py-2 rounded-full transition-all font-normal text-sm xl:text-base"
+                            >
+                                Brochure
+                            </button>
                             <button
                                 onClick={handleClick}
                                 className="border-2 border-[#f5b461] text-[#f5b461] hover:bg-[#f5b461] hover:text-[#8B3333] px-5 xl:px-6 py-1.5 xl:py-2 rounded-full transition-all font-normal text-sm xl:text-base"
@@ -119,8 +136,14 @@ export default function Navbar() {
                         ))}
                     </div>
 
-                    {/* Mobile Register Button */}
-                    <div className="pt-2 px-2 pb-5">
+                    {/* Mobile Buttons - Both styled same */}
+                    <div className="pt-2 px-2 pb-5 space-y-2">
+                        <button
+                            onClick={handleBrochureDownload}
+                            className="block border-2 border-[#f5b461] text-[#f5b461] hover:bg-[#f5b461] hover:text-[#8B3333] px-6 py-2.5 rounded-full transition-all duration-200 font-normal text-center w-full"
+                        >
+                            Brochure
+                        </button>
                         <button
                             onClick={handleClick}
                             className="block border-2 border-[#f5b461] text-[#f5b461] hover:bg-[#f5b461] hover:text-[#8B3333] px-6 py-2.5 rounded-full transition-all duration-200 font-normal text-center w-full"

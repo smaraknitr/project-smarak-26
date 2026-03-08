@@ -1,88 +1,42 @@
 export type TeamMember = {
-    name: string;
-    description: string;
-    imageSrc: string;
+  name: string;
+  description: string;
+  imageSrc: string;
 };
 
 export const teamHeads: TeamMember[] = [
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
-    {
-        name: 'NAME',
-        description: 'DESCRIPTION',
-        imageSrc: '/images/dummy.png',
-    },
+  { name: "Aditya", description: "Photography", imageSrc: "/images/team/aditya.webp" },
+  { name: "Ayush", description: "WebDev", imageSrc: "/images/team/ayush.webp" },
+  { name: "Indrayue Roy", description: "EM", imageSrc: "/images/team/indrayue-roy.webp" },
+  { name: "Shanti Toppo", description: "PR", imageSrc: "/images/team/shanti-toppo.webp" },
+  { name: "Pinakshi Priyadarshini", description: "EM", imageSrc: "/images/team/pinakshi-priyadarshini.webp" },
+  { name: "Ayush Sinha", description: "WebDev", imageSrc: "/images/team/ayush-sinha.webp" },
+  { name: "Aman Kumar", description: "EM", imageSrc: "/images/team/aman-kumar.webp" },
+  { name: "Shubham Ranjan", description: "EM", imageSrc: "/images/team/shubham-ranjan.webp" },
+  { name: "Amit Kuanr", description: "EM", imageSrc: "/images/team/amit-kuanr.webp" },
+  { name: "Dhruv Agarwal", description: "WebDev", imageSrc: "/images/team/dhruv-agarwal.webp" },
+  { name: "PRITAM RAJ MAHAPA", description: "Sponsorship", imageSrc: "/images/team/pritam-raj-mahapa.webp" },
+  { name: "Suryansu Panigrahi", description: "Decoration", imageSrc: "/images/team/suryansu-panigrahi.webp" },
+  { name: "Priya Singh", description: "Booking & Permission", imageSrc: "/images/team/priya-singh.webp" },
+  { name: "Saloni Kumari", description: "Creative", imageSrc: "/images/team/saloni-kumari.webp" },
+  { name: "Harsh Daruka", description: "EM", imageSrc: "/images/team/harsh-daruka.webp" },
+  { name: "Tanmaya Mohapatra", description: "Booking & Permission", imageSrc: "/images/team/tanmaya-mohapatra.webp" },
+  { name: "Sivanshu Surya", description: "Photography", imageSrc: "/images/team/sivanshu-surya.webp" },
+  { name: "Alok Kumar", description: "Creative", imageSrc: "/images/team/alok-kumar.webp" },
+  { name: "Ritesh Kumar Panda", description: "EM", imageSrc: "/images/team/ritesh-kumar-panda.webp" },
+  { name: "Pratyasa Swain", description: "Content", imageSrc: "/images/team/pratyasa-swain.webp" },
+  { name: "Mohit Kumar Marndi", description: "Requirements", imageSrc: "/images/team/mohit-kumar-marndi.webp" },
+  { name: "Hrishikesh Sonowal", description: "Creative", imageSrc: "/images/team/hrishikesh-sonowal.webp" },
+  { name: "Kriti", description: "Decoration", imageSrc: "/images/team/kriti.webp" },
+  { name: "Deepak Saini", description: "WebDev", imageSrc: "/images/team/deepak-saini.webp" },
+  { name: "Subham Pradhan", description: "Booking & Permission", imageSrc: "/images/team/subham-pradhan.webp" },
+  { name: "Ishita Agrawal", description: "Creative", imageSrc: "/images/team/ishita-agrawal.webp" },
+  { name: "Sudhanshu Kumar", description: "Accommodation", imageSrc: "/images/team/sudhanshu-kumar.webp" },
+  { name: "Abisek Pandey", description: "EM", imageSrc: "/images/team/abisek-pandey.webp" },
+  { name: "Subhashree Mohapatra", description: "Creative", imageSrc: "/images/team/subhashree-mohapatra.webp" },
+  { name: "Anshul Kumar", description: "EM", imageSrc: "/images/team/anshul-kumar.webp" },
+  { name: "SATYAPAL PATEL", description: "EM", imageSrc: "/images/team/satyapal-patel.webp" },
+  { name: "Gajingam Vijaya Durga", description: "Content", imageSrc: "/images/team/gajingam-vijaya-durga.webp" },
+  { name: "Aryan Pratap Singh", description: "Accommodation", imageSrc: "/images/team/aryan-pratap-singh.webp" },
+  { name: "Sunny Saurabh", description: "EM", imageSrc: "/images/team/sunny-saurabh.webp" }
 ];
