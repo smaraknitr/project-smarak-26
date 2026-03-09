@@ -5,6 +5,12 @@ import Image from "next/image";
 import { coordinators } from "../app/config/coordinators";
 
 export default function Coordinators() {
+    const sortedCoordinators = [...coordinators].sort((a, b) => {
+    if (a.description === b.description) {
+        return a.name.localeCompare(b.name); // sort names inside same team
+    }
+    return a.description.localeCompare(b.description); // sort teams
+    });
     return (
         <section id="coordinators" className="relative w-full py-16 md:py-20 lg:py-24 bg-[url('/images/bg.png')] bg-[length:100%_auto] bg-repeat bg-top overflow-hidden">
             <div className="absolute inset-0 bg-[#f5e6cc]/20"></div>
@@ -37,10 +43,10 @@ export default function Coordinators() {
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-6 sm:gap-8 lg:gap-10 px-6 md:px-12 w-full max-w-[1400px] mx-auto">
-                    {coordinators.map((card, index) => (
+                    {sortedCoordinators.map((card, index) => (
                         <div
                             key={index}
-                            className="relative w-full sm:w-[calc(50%-1.5rem)] md:w-[calc(33.333%-2rem)] lg:w-[calc(25%-2.5rem)] xl:w-[calc(20%-2.5rem)] max-w-[280px] hover:-translate-y-2 transition-transform duration-300 cursor-pointer flex flex-col items-center"
+                            className="relative w-full sm:w-[calc(50%-1.5rem)] md:w-[calc(33.333%-2rem)] lg:w-[calc(25%-2.5rem)] xl:w-[calc(20%-2.5rem)] max-w-[300px] hover:-translate-y-2 transition-transform duration-300 cursor-pointer flex flex-col items-center"
                         >
 
                             <div className="relative w-[13rem] h-[13rem] sm:w-[13.5rem] sm:h-[13.5rem] md:w-[14rem] md:h-[14rem] rounded-full bg-[#980204] border-[4px] border-[#f5b461] flex items-center justify-center overflow-hidden z-20 shadow-lg p-4 sm:p-5" style={{ marginTop: '-1rem' }}>

@@ -5,6 +5,12 @@ import Image from "next/image";
 import { teamHeads } from "../app/config/core-team";
 
 export default function CoreTeam() {
+    const sortedTeamHeads = [...teamHeads].sort((a, b) => {
+    if (a.description === b.description) {
+        return a.name.localeCompare(b.name); // sort by name
+    }
+    return a.description.localeCompare(b.description); // sort by team/role
+    });
     return (
         <section id="about" className="relative w-full py-16 md:py-20 lg:py-24 bg-[url('/images/bg.png')] bg-[length:100%_auto] bg-repeat bg-top overflow-hidden">
             <div className="absolute inset-0 bg-[#f5e6cc]/20"></div>
@@ -36,7 +42,7 @@ export default function CoreTeam() {
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-6 px-6 md:px-12 w-full max-w-7xl mx-auto">
-                    {teamHeads.map((card, index) => (
+                    {sortedTeamHeads.map((card, index) => (
                         <div
                             key={index}
                             className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1.125rem)] rounded-3xl overflow-hidden shadow-lg border-[4px] md:border-[6px] border-[#f5b461] hover:scale-105 transition-transform duration-300 cursor-pointer flex flex-col"
