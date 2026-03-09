@@ -6,7 +6,7 @@ import Slider from "@/components/slider";
 import CoreTeam from "@/components/CoreTeam";
 import Coordinators from "@/components/Coordinators";
 import Patron from "@/components/Patrons";
-
+import Convenor from "@/components/Convenor";
 function Page() {
 
   return (
@@ -54,6 +54,7 @@ function Page() {
       <Slider />
       <Patron/>
       <Slider/>
+      <Convenor />
       <CoreTeam />
       <Coordinators />
       <Slider />
