@@ -38,5 +38,7 @@ export const teamHeads: TeamMember[] = [
   
   { name: "Gajingam Vijaya Durga", description: "Content", imageSrc: "/images/team/gajingam-vijaya-durga.webp" },
   { name: "Aryan Pratap Singh", description: "Accommodation", imageSrc: "/images/team/aryan-pratap-singh.webp" },
-  { name: "Sunny Saurabh", description: "Event Management", imageSrc: "/images/team/sunny-saurabh.webp" }
+  { name: "Sunny Saurabh", description: "Event Management", imageSrc: "/images/team/sunny-saurabh.webp" },
+  { name: "Priyal Todi", description: "Creative", imageSrc: "/images/team/priyal-todi.webp" },
+  { name: "Priyanshu Maurya", description: "Creative", imageSrc: "/images/team/priyanshu-maurya.webp" },
 ];
