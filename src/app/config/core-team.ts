@@ -29,7 +29,7 @@ export const teamHeads: TeamMember[] = [
   { name: "Hrishikesh Sonowal", description: "Creative", imageSrc: "/images/team/hrishikesh-sonowal.webp" },
   { name: "Kriti", description: "Decoration", imageSrc: "/images/team/kriti.webp" },
   { name: "Deepak Saini", description: "WebDev", imageSrc: "/images/team/deepak-saini.webp" },
-  { name: "Subham Pradhan", description: "Booking & Permission", imageSrc: "/images/team/subham-pradhan.webp" },
+  { name: "Subham Pradhan", description: "Booking & Permission", imageSrc: "https://res.cloudinary.com/dpzac6uao/image/upload/t_Meoww/20251204_120655_-_Subham_Pradhan_ivdklo" },
   { name: "Ishita Agrawal", description: "Creative", imageSrc: "/images/team/ishita-agrawal.webp" },
   { name: "Sudhanshu Kumar", description: "Accommodation", imageSrc: "/images/team/sudhanshu-kumar.webp" },
   { name: "Abisek Pandey", description: "Event Management", imageSrc: "/images/team/abisek-pandey.webp" },
