@@ -4,12 +4,21 @@ import Slider from "./slider";
 import { handleRegister } from "@/config";
 
 export default function Hero() {
+    function handleBrochureDownload() {
+        const link = document.createElement('a');
+        link.href = '/brochure.pdf';
+        link.download = 'SMARAK_Brochure.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
     return (
         <>
             <div className="relative w-full min-h-[93svh] llg:min-h-[120svh] flex flex-col items-center justify-start overflow-hidden bg-[url('/images/bg.png')] bg-center ">
-                <div className="relative z-20 flex flex-col items-center w-full px-4 pt-[10vh] md:pt-[2vh] llg:pt-[6vh]">
+                <div className="relative z-20 flex flex-col items-center w-full px-4 pt-[4vh] md:pt-[1vh] llg:pt-[4vh]">
                     {/* Logo */}
-                    <div className="relative w-[60vw] sm:w-[40vw] lg:w-[25vw] mb-4 animate-fade-in-down">
+                    <div className="relative w-[60vw] sm:w-[40vw] lg:w-[25vw] mb-2 sm:mb-3 animate-fade-in-down">
                         <Image
                             src="/images/smarak.png"
                             alt="Smarak Logo"
@@ -21,13 +30,13 @@ export default function Hero() {
                     </div>
 
                     {/* Tagline */}
-                    <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-center text-[#980204] font-serif font-semibold tracking-wider max-w-3xl drop-shadow-sm">
+                    <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-center text-[#980204] font-serif font-semibold tracking-wider max-w-3xl drop-shadow-sm mb-2 sm:mb-3">
                         &ldquo;Shaping Architecture Through Engineering
                         Thought&rdquo;
                     </p>
 
                     {/* Date Section */}
-                    <div className="relative flex flex-row items-center justify-center gap-4 sm:gap-6 w-full max-w-4xl py-6">
+                    <div className="relative flex flex-row items-center justify-center gap-4 sm:gap-6 w-full max-w-4xl py-3 sm:py-4">
                         <div className="hidden sm:block w-20 md:w-32 lg:w-40 opacity-90 transition-transform hover:-translate-x-1 duration-300">
                             <Image
                                 src="/images/arrow-left.png"
@@ -53,12 +62,29 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    <div className="">
+                    {/* Buttons - Same width */}
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center mt-2 sm:mt-3">
+                        <button
+                            onClick={handleBrochureDownload}
+                            className="border-2 border-[#980204] hover:text-[#980204] 
+                                       bg-[#980204] text-white hover:bg-[#f5ebdd]
+                                       w-[180px] sm:w-[200px] md:w-[220px]
+                                       py-2.5 sm:py-3 font-serif
+                                       rounded-full 
+                                       text-base sm:text-lg md:text-xl
+                                       font-normal tracking-wide
+                                       transition-all duration-300
+                                       shadow-3xl drop-shadow-2xl
+                                       hover:scale-105"
+                        >
+                            Brochure
+                        </button>
                         <button
                             onClick={handleRegister}
                             className="border-2 border-[#980204] hover:text-[#980204] 
                                        bg-[#980204] text-white hover:bg-[#f5ebdd]
-                                       px-8 sm:px-10 py-2.5 sm:py-3 font-serif
+                                       w-[180px] sm:w-[200px] md:w-[220px]
+                                       py-2.5 sm:py-3 font-serif
                                        rounded-full 
                                        text-base sm:text-lg md:text-xl
                                        font-normal tracking-wide
@@ -72,7 +98,7 @@ export default function Hero() {
                 </div>
 
                 {/* Monument (mobile) */}
-                <div className="absolute bottom-0 z-10 w-full h-[50vh] md:h-[65vh] pointer-events-none llg:hidden">
+                <div className="absolute bottom-0 z-10 w-full h-[45vh] md:h-[60vh] pointer-events-none llg:hidden">
                     <Image
                         src="/images/monu.png"
                         alt="Monument"

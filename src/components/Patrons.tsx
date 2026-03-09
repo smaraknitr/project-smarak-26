@@ -41,22 +41,24 @@ export default function Patron() {
                             key={index}
                             className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1.125rem)] rounded-3xl overflow-hidden shadow-lg border-[4px] md:border-[6px] border-[#f5b461] hover:scale-105 transition-transform duration-300 cursor-pointer flex flex-col"
                         >
-                            <div className="relative w-full aspect-[1.1] md:aspect-[1.15] bg-[#980204] flex items-end justify-center overflow-hidden pt-4">
-                                <div className="absolute inset-4 sm:inset-6 z-[1]">
-                                    <Image
-                                        src="/images/Vector.svg"
-                                        alt="vector Background"
-                                        fill
-                                        className="object-contain"
-                                    />
+                            <div className="relative w-full aspect-[1] md:aspect-[1] bg-[#980204] flex items-center justify-center overflow-hidden p-3 sm:p-4">
+                                <div className="absolute inset-0 flex items-center justify-center z-[1] p-3 sm:p-4">
+                                    <div className="relative w-full aspect-square">
+                                        <Image
+                                            src="/images/Vector.svg"
+                                            alt="vector Background"
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
                                 </div>
 
-                                <div className="absolute inset-0 z-[2] top-4">
+                                <div className="relative w-[85%] aspect-square z-[2] rounded-full overflow-hidden scale-[0.85]">
                                     <Image
                                         src={card.imageSrc}
                                         alt={card.name}
                                         fill
-                                        className="object-contain object-bottom"
+                                        className="object-cover object-center"
                                         priority={index < 4}
                                     />
                                 </div>

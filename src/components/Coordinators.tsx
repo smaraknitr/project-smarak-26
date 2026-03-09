@@ -43,22 +43,24 @@ export default function Coordinators() {
                             className="relative w-full sm:w-[calc(50%-1.5rem)] md:w-[calc(33.333%-2rem)] lg:w-[calc(25%-2.5rem)] xl:w-[calc(20%-2.5rem)] max-w-[280px] hover:-translate-y-2 transition-transform duration-300 cursor-pointer flex flex-col items-center"
                         >
 
-                            <div className="relative w-[14.5rem] h-[14.5rem] sm:w-52 sm:h-52 md:w-56 md:h-56 rounded-full bg-[#980204] border-[4px] border-[#f5b461] flex items-end justify-center overflow-hidden z-20 shadow-lg" style={{ marginTop: '-1rem' }}>
-                                <div className="absolute inset-2 sm:inset-4 z-[1]">
-                                    <Image
-                                        src="/images/Vector.svg"
-                                        alt="vector Background"
-                                        fill
-                                        className="object-contain"
-                                    />
+                            <div className="relative w-[13rem] h-[13rem] sm:w-[13.5rem] sm:h-[13.5rem] md:w-[14rem] md:h-[14rem] rounded-full bg-[#980204] border-[4px] border-[#f5b461] flex items-center justify-center overflow-hidden z-20 shadow-lg p-4 sm:p-5" style={{ marginTop: '-1rem' }}>
+                                <div className="absolute inset-0 flex items-center justify-center z-[1] p-4 sm:p-5">
+                                    <div className="relative w-full aspect-square">
+                                        <Image
+                                            src="/images/Vector.svg"
+                                            alt="vector Background"
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
                                 </div>
 
-                                <div className="absolute inset-x-0 bottom-0 top-6 z-[2]">
+                                <div className="relative w-[90%] aspect-square z-[2] rounded-full overflow-hidden scale-[0.85]">
                                     <Image
                                         src={card.imageSrc}
                                         alt={card.name}
                                         fill
-                                        className="object-contain object-bottom"
+                                        className="object-cover object-center"
                                         priority={index < 5}
                                     />
                                 </div>
@@ -86,4 +88,4 @@ export default function Coordinators() {
             </div>
         </section>
     );
-}
+}   
