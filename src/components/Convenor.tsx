@@ -54,7 +54,12 @@ export default function Convenor() {
                 </h3>
 
                 <p className="text-xs font-semibold text-[#7a1a0f] uppercase tracking-widest">
-                  {card.description}
+                  {card.description.split(',').map((part, index) => (
+                    <React.Fragment key={index}>
+                      {part.trim()}
+                      {index < card.description.split(',').length - 1 && <br />}
+                    </React.Fragment>
+                  ))}
                 </p>
 
               </div>

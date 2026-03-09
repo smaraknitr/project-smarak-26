@@ -7,12 +7,12 @@ export type PatronMember = {
 export const teamHeads: PatronMember[] = [
   {
     name: "Prof. Pradip Sarkar",
-    description: "Patron",
+    description: "Chair Professor BIS",
     imageSrc: "/images/team/pradip-sarkar.webp",
   },
   {
-    name: "Prof. Suman Roy",
-    description: "Patron",
-    imageSrc: "/images/team/suman-roy.webp",
+  name: "Prof. Suman Roy",
+  description: "Mentor BIS Club,Faculty Advisor CEST",
+  imageSrc: "/images/team/suman-roy.webp",
   },
 ];
