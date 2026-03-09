@@ -7,15 +7,15 @@ export type TeamMember = {
 
 export const convenors = [
     {
+        name: "Rishabh Patel",
+        description: "Convenor",
+        imageSrc: "/images/team/Rishab-Patel.webp",
+    },
+    {
     name: "Diptesh Kumar Panda",
     description: "Convenor",
     imageSrc: "/images/team/Diptesh-kumar.webp",
     },
 
-    {
-        name: "Rishab Patel",
-        description: "Convenor",
-        imageSrc: "/images/team/Rishab-Patel.webp",
-    },
   
 ];

@@ -81,11 +81,16 @@ export default function Coordinators() {
                                 >
                                     {card.name}
                                 </h3>
-                                <p className={`text-center text-[#7a1a0f] font-bold mt-0.5 sm:mt-1 uppercase tracking-widest whitespace-nowrap overflow-hidden text-ellipsis w-full px-1 ${card.description.length > 15
+                                <p className={`text-center text-[#7a1a0f] font-bold mt-0.5 sm:mt-1 uppercase tracking-widest w-full px-1 ${card.description.length > 15
                                     ? "text-[7.5px] sm:text-[8px] md:text-[6.5px] lg:text-[7.5px] xl:text-[8.5px]"
                                     : "text-[8px] sm:text-[9px] md:text-[7.5px] lg:text-[8.5px] xl:text-[10px]"
                                     }`}>
-                                    {card.description}
+                                    {card.description.split(',').map((part, index) => (
+                                        <React.Fragment key={index}>
+                                            {part.trim()}
+                                            {index < card.description.split(',').length - 1 && <br />}
+                                        </React.Fragment>
+                                    ))}
                                 </p>
                             </div>
                         </div>
